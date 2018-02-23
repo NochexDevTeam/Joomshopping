@@ -1,0 +1,22 @@
+ADD THE FOLLOWING CODE AROUND LINE 423/424 AFTER PAYPAL
+
+// Nochex
+define('_JSHOP_NOCHEX_TESTMODE','Test Mode');
+define('_JSHOP_NOCHEX_TESTMODE_DESCRIPTION','Test Nochex Checkout');
+define('_JSHOP_NOCHEX_EMAIL','Nochex Merchant ID/Email:');
+define('_JSHOP_NOCHEX_EMAIL_DESCRIPTION','Your Nochex Merchant ID/Email Address.');
+define('_JSHOP_NOCHEX_XML','Detailed Product Information:');
+define('_JSHOP_NOCHEX_XML_DESCRIPTION','Show detailed product information in a structured format on your Nochex payment page. ');
+define('_JSHOP_NOCHEX_POSTAGE','Show Postage: ');
+define('_JSHOP_NOCHEX_POSTAGE_DESCRIPTION','Display postage on your Nochex payment page.');
+define('_JSHOP_NOCHEX_HIDE','Hide Billing Details: ');
+define('_JSHOP_NOCHEX_HIDE_DESCRIPTION','Hide billing details on your Nochex payment page.');
+define('_JSHOP_NOCHEX_DEBUG','Debug Mode: ');
+define('_JSHOP_NOCHEX_DEBUG_DESCRIPTION','Debug your Nochex module in case there is an issue being caused.');
+define('_JSHOP_NOCHEX_TRANSACTION_END','Order Status for successful transactions');
+define('_JSHOP_NOCHEX_TRANSACTION_END_DESCRIPTION','Select the order status to which the actual order is set, if the Nochex APC was successful.');
+define('_JSHOP_NOCHEX_TRANSACTION_PENDING','Order Status for Pending Payments');
+define('_JSHOP_NOCHEX_TRANSACTION_PENDING_DESCRIPTION','The order Status to which Orders are set, which have no completed Payment Transaction.');
+define('_JSHOP_NOCHEX_TRANSACTION_FAILED','Order Status for failed transactions');
+define('_JSHOP_NOCHEX_TRANSACTION_FAILED_DESCRIPTION','Select an order status for failed Nochex transactions.');
+define('_JSHOP_CHECK_DATA_RETURNS', 'Verify data after Nochex RETURN');
