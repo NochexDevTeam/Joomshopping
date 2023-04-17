@@ -23,7 +23,7 @@ class pm_nochex extends PaymentRoot{
 
 		$postvars = http_build_query($_POST);
 
-		$url = "https://www.nochex.com/apcnet/apc.aspx";
+		$url = "https://secure.nochex.com/apc/apc.aspx";
 
 		// Curl code to post variables back
 		$ch = curl_init(); // Initialise the curl tranfer
@@ -48,7 +48,7 @@ class pm_nochex extends PaymentRoot{
 		$debug .= "\r\nRESPONSE:\r\n$output";
 
 		//If statement
-		if (!strstr($output, "AUTHORISED")) {  // searches response to see if AUTHORISED is present if it isn’t a failure message is displayed
+		if (!strstr($output, "AUTHORISED")) {  // searches response to see if AUTHORISED is present if it isnâ€™t a failure message is displayed
 			return array(3, 'Status Failed. Order ID '.$order->order_id,$output,$_POST);
 			saveToLog("payment.log", "Nochex failed: ".$order->order_id);
 		} 
